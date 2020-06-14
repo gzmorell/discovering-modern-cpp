@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/gzmorell/develop/cpp/discovering_modern_c++/ch_01/1.1_hello",
+  "command": "/usr/bin/g++-10    -O3 -DNDEBUG   -std=gnu++2a -o CMakeFiles/Hello.dir/main.cpp.o -c /home/gzmorell/develop/cpp/discovering_modern_c++/ch_01/1.1_hello/main.cpp",
+  "file": "/home/gzmorell/develop/cpp/discovering_modern_c++/ch_01/1.1_hello/main.cpp"
+}
+]
