@@ -1,0 +1,18 @@
+#!/bin/sh
+clear
+if [ "$1" == "clean" ]; then
+  rm -rf build
+fi
+if [ ! -d build ]; then
+  mkdir build
+fi
+cd build
+cmake .. && make
+echo
+echo "+++ Running program Hello"
+echo
+./Hello
+echo
+if [ ! -f ../compile_commands.json ]; then
+  ln -s build/compile_commands.json ../compile_commands.json 
+fi

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.6)
-set(CMAKE_CXX_COMPILER /usr/bin/g++-10)
+set(CMAKE_CXX_COMPILER /usr/bin/g++)
 project(initializer VERSION 1.0
               DESCRIPTION "Initializer Lists"
               LANGUAGES CXX)

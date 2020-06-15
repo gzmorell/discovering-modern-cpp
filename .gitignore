@@ -1,6 +1,7 @@
 *.o
 build*/*
 *.bin
+build
 *.so.*
 *.user.*
 cmake_install.cmake
@@ -9,3 +10,4 @@ CMakeFiles
 .clangd
 CMakeCache.txt
 Makefile
+compile_commands.json
