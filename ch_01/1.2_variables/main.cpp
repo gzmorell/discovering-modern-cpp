@@ -69,5 +69,10 @@ int main() {
   long li = 123'456'789;
   unsigned int bin = 0b1001'1110'0110'1101;
   std::cout << li << ", " << std::hex << bin << std::endl;
+
+  // Suma de números si superan límite
+  int maximo = 0x7FFFFFFF;
+  std::cout << std::dec << "Tamaño en bytes: " << sizeof(int) << ", Maximo: " << maximo << ", Maximo + 1: " << maximo + 1 << std::endl;
+
   return 0;
 }
