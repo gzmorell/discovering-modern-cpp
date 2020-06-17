@@ -5,7 +5,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-  curso::vector v{3};
+  curso::vector v(3);
   v[0] = 0;
   v[1] = 1;
   v[2] = 2;

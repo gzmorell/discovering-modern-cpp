@@ -28,7 +28,7 @@ public:
     delete [] other.data;
   }
 
-  vector(std::initializer_list<double> values)
+  explicit vector(std::initializer_list<double> values)
       : _size(values.size()), data(new double[_size]) {
     std::copy(std::begin(values), std::end(values), data);
   }
