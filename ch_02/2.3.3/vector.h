@@ -20,6 +20,14 @@ public:
       data[i] = other.data[i];
     std::cout << "Vector copied." << std::endl;
   };
+  vector(vector &&other) {
+    std::cout << "Vector moved." << std::endl;
+    data = other.data;
+    _size = other._size;
+    other._size = 0;
+    delete [] other.data;
+  }
+
   vector(std::initializer_list<double> values)
       : _size(values.size()), data(new double[_size]) {
     std::copy(std::begin(values), std::end(values), data);
@@ -38,7 +46,18 @@ public:
     std::copy(std::begin(values), std::end(values), data + _size);
     return *this;
   }
+  vector &operator=(vector&& other) {
+    if (this == &other)
+      return *this;
+    delete [] data;
+    data = other.data;
+    _size = other._size;
+    other.data = nullptr;
+    other._size = 0;
+    return *this;
+  }
   ~vector() {
+    _size = 0;
     delete[] data;
     std::cout << "Vector destroyed." << std::endl;
   }
