@@ -9,7 +9,8 @@ int main(int argc, char *argv[])
   v[0] = 0;
   v[1] = 1;
   v[2] = 2;
-  curso::vector u{std::move(v)};
+  //curso::vector u{std::move(v)};
+  curso::vector u{v};
   curso::vector w(3);
   w = v;
   curso::vector x{3,4,5};
