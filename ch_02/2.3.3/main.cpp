@@ -5,6 +5,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
+  // curso::vector v{3}; Calls the initializer_list constructor
   curso::vector v(3);
   v[0] = 0;
   v[1] = 1;
