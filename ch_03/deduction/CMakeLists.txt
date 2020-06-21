@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.6)
+project(deduction VERSION 1.0
+              DESCRIPTION "Parameter Type Deduction"
+              LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_COMPILER /usr/bin/g++)
+set(CMAKE_BUILD_TYPE Release)
+include(CTest)
+enable_testing()
+set(SRC_LIST main.cpp)
+set(HDR_LIST)
+add_executable(${PROJECT_NAME} ${SRC_LIST} ${HDR_LIST})
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
