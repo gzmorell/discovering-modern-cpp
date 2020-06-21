@@ -12,3 +12,4 @@ CMakeCache.txt
 Makefile
 compile_commands.json
 *.user
+.vscode
