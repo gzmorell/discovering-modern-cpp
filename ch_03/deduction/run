@@ -1,6 +1,6 @@
 #!/bin/sh
 clear
-if [ "$1" == "clean" ]; then
+if [ "$1x" = "cleanx" ]; then
   rm -rf build
   rm -rf compile_commands.json
   exit

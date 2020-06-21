@@ -16,6 +16,7 @@ void func(const T& arg)
 template<typename T>
 void func(T& arg)
 {
+  arg += arg;
     cout << "lvalue ref func" << endl;
 }
 
